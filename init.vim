@@ -274,6 +274,11 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 "SETEOS DEL CURSOR Y LA LINEA DONDE ESTÁ EL CURSOR
-set cursorline 
 hi clear CursorLine
 hi CursorLine term=underline cterm=underline gui=underline
+
+
+highlight Cursor guifg=gray guibg=gray
+highlight iCursor guifg=white guibg=steelblue
+set guicursor=n-v-c:block-Cursor
+set guicursor+=i:block-iCursor-blinkoff50-blinkon50
